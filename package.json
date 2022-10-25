@@ -27,17 +27,9 @@
     ],
     "overrides": [
       {
-        "rules": {
-          "import/no-anonymous-default-export": "on"
-        }
-      },
-      {
         "files": [
           "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "on"
-        }
+        ]
       }
     ]
   },
