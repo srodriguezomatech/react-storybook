@@ -1,6 +1,5 @@
 import React from "react";
 import { within, userEvent } from "@storybook/testing-library";
-
 import { Dashboard } from "../components/pages/Dashboard/Dashboard";
 
 export default {

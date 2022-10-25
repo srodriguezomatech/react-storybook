@@ -1,39 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./styles.css";
+import * as React from "react";
+import { StyledButton, StyledText } from "./styles";
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+const Button = (props) => {
+  const { title } = props;
   return (
-    <button
-      type='button'
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <StyledButton {...props} onClick={props.onClick}>
+      <StyledText {...props}>{title}</StyledText>
+    </StyledButton>
   );
 };
 
-Button.propTypes = {
-  primary: PropTypes.bool,
-  backgroundColor: PropTypes.string,
-  size: PropTypes.oneOf(["small", "medium", "large"]),
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-};
-
-Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: "medium",
-  onClick: undefined,
-};
+export default Button;
