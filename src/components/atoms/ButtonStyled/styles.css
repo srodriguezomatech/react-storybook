@@ -1,0 +1,42 @@
+@import "../../settings/variables.css";
+
+.custom-button {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
+  width: auto;
+  font-size: 14px;
+  padding: 0 16px;
+  transition: 0.25s;
+  position: relative;
+}
+
+/* Button Colors */
+.primary {
+  background-color: var(--cPrimaryLight);
+  border-color: var(--cPrimary);
+  color: var(--cPrimary);
+}
+.secondary {
+  background-color: var(--cSecondaryLight);
+  border-color: var(--cSecondary);
+  color: var(--cSecondary);
+}
+/* Button Effects */
+.custom-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Button Styles */
+
+/* Button Sizes */
+.small {
+  height: 30px;
+}
+.medium {
+  height: 40px;
+}
+.large {
+  height: 46px;
+}

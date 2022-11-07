@@ -1,0 +1,12 @@
+html {
+  --cPrimary: #0056ef;
+  --cSecondary: #ef78ff;
+  --cPrimaryLight: #0056ef20;
+  --cSecondaryLight: #ef78ff20;
+  --cWhite: #ffffff;
+  --cBlack: #000000;
+  --cGreyDark: #39393d;
+  --cGreyMedium: #504f56;
+  --cNone: transparent;
+  --fontFamilyDft: "Outfit";
+}
