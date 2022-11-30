@@ -20,10 +20,12 @@ export const Primary = Template.bind({});
 Primary.args = {
   variant: "primary",
   title: "Primary",
+  size: "medium",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: "secondary",
   title: "Secondary",
+  size: "medium",
 };
