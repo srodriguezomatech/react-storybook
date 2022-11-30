@@ -2,30 +2,32 @@
 import React from "react";
 import ButtonStyled from "../components/atoms/ButtonStyled";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: "Atoms/ButtonStyled",
   component: ButtonStyled,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  // argTypes: {
-  //   backgroundColor: { control: "color" },
-  // },
+  argTypes: {
+    label: {
+      control: 'text',
+    },    
+    variant: {
+      control: { type: 'radio' },
+      options: ['primary', 'secondary'],
+    },
+    size: {
+      control: { type: 'radio' },
+      options: ['small', 'medium', 'large'],
+    },
+  },
 };
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args) => <ButtonStyled {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  variant: "primary",
-  title: "Primary",
-  size: "medium",
+export const Basic = Template.bind({});
+Basic.args = { 
+  label: 'Nom del button',
+  variant: 'primary',
+  size: 'medium',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  variant: "secondary",
-  title: "Secondary",
-  size: "medium",
-};
+
+

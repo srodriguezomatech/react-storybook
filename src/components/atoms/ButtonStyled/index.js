@@ -1,12 +1,12 @@
 import "./styles.css";
 
 const ButtonStyled = ({
-  variant = "primary",
-  title = "title",
-  size = ["large", "medium", "small"],
+  variant = "secondary",
+  label = "Lorem Ipsum",
+  size = "medium",
 }) => {
   return (
-    <button className={`custom-button ${variant} ${size}`}>{title}</button>
+    <button className={`custom-button ${variant} ${size}`}>{label}</button>
   );
 };
 export default ButtonStyled;

@@ -11,7 +11,7 @@
   position: relative;
 }
 
-/* Button Colors */
+/* variant */
 .primary {
   background-color: var(--cPrimaryLight);
   border-color: var(--cPrimary);
@@ -28,9 +28,8 @@
   opacity: 0.8;
 }
 
-/* Button Styles */
 
-/* Button Sizes */
+/* size */
 .small {
   height: 30px;
 }
