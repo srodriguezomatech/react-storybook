@@ -3,7 +3,7 @@ import "./styles.css";
 const ButtonStyled = ({
   variant = "primary",
   title = "title",
-  size = "medium",
+  size = "large",
 }) => {
   return (
     <button className={`custom-button ${variant} ${size}`}>{title}</button>
